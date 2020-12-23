@@ -8,4 +8,4 @@ CREATE TABLE STUDENT(
     PRIMARY KEY ( STUDENT_ID )
 );
 
-select * from student;
+SELECT * FROM STUDENT;

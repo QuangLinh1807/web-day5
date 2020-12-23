@@ -19,7 +19,8 @@ public class StudentRepositoryJdbc implements StudentRepository {
 
 	@Override
 	public void insert(Student s) {
-		jdbcTemplate.update("INSERT INTO STUDENT (STUDENT_NAME, STUDENT_DOB) VALUES (?, ?)", s.getName(), s.getDob());
+		jdbcTemplate.update("INSERT INTO STUDENT (STUDENT_NAME, STUDENT_DOB)"
+				+ " VALUES (?, ?)", s.getName(), s.getDob());
 	}
 
 }
